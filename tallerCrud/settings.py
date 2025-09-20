@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'projects',
     'rest_framework',
+    "drf_spectacular",
+    
 ]
 
 MIDDLEWARE = [
@@ -122,3 +124,12 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+REST_FRAMEWORK = {
+    "DEFAULT_SCHEMA_CLASS": "drf_spectacular.openapi.AutoSchema",
+}
+SPECTACULAR_SETTINGS = {
+    "TITLE": "Mi API con DRF",             # título de la documentación
+    "DESCRIPTION": "Documentación de mi API usando drf-spectacular",
+    "VERSION": "1.0.0",                    # versión de tu API
+    "SERVE_INCLUDE_SCHEMA": False,         # no incluir esquema dentro de Swagger/Redoc
+}
