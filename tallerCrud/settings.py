@@ -77,9 +77,14 @@ WSGI_APPLICATION = 'tallerCrud.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
+
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bt3cyase2li3v147vt05',
+        'USER': 'uimbvcj8v2ecxdmalal8',
+        'PASSWORD': 'hRCDKPkb99iLXlyUmBhngNL0GJT68U',
+        'HOST': 'bt3cyase2li3v147vt05-postgresql.services.clever-cloud.com',
+        'PORT': '50013',
     }
 }
 
