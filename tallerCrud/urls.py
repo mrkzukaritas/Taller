@@ -21,6 +21,7 @@ from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('projects.urls')),
+    path('Tareas/', include('tareas.urls')),
 
     # Endpoint que genera el esquema OpenAPI
     path("schema/", SpectacularAPIView.as_view(), name="schema"),
