@@ -83,11 +83,15 @@ WSGI_APPLICATION = 'tallerCrud.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    'default': dj_database_url.config(
-        # Replace this value with your local database's connection string.
-        default='postgresql://uimbvcj8v2ecxdmalal8:hRCDKPkb99iLXlyUmBhngNL0GJT68U@bt3cyase2li3v147vt05-postgresql.services.clever-cloud.com:50013/bt3cyase2li3v147vt05',
-        conn_max_age=600
-    )
+
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'bt3cyase2li3v147vt05',
+        'USER': 'uimbvcj8v2ecxdmalal8',
+        'PASSWORD': 'hRCDKPkb99iLXlyUmBhngNL0GJT68U',
+        'HOST': 'bt3cyase2li3v147vt05-postgresql.services.clever-cloud.com',
+        'PORT': '50013',
+    }
 }
 
 
