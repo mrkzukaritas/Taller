@@ -30,9 +30,10 @@ Copy code
 #### ✅ Ejemplo de Proyecto (JSON)  
 ```
 {
-  "id": 1,
-  "nombre": "Plataforma Web",
-  "descripcion": "Un sistema para gestión de usuarios"
+        "id": 1,
+        "title": "holacomoestas",
+        "description": "ayuda help miedpo",
+        "technologies": "cerebro",
 }
 ```
 ### 📋 API de Tareas  
@@ -50,11 +51,14 @@ https://taller-api-0w81.onrender.com/Tareas/api/tareas/
 
 #### ✅ Ejemplo de Tarea (JSON)  
 ```
-{
-  "id": 1,
-  "nombre": "Configurar base de datos",
-  "completada": false
-}
+    {
+        "id": 2,
+        "titulo": "hacer tan",
+        "descripcion": "hel´p",
+        "completada": true,
+        "prioridad": 6,
+        "categoria": "mate"
+    }
 ```
 
 🛠️ Tecnologías usadas
