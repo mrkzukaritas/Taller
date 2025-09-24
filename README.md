@@ -14,7 +14,7 @@ Este proyecto implementa **dos APIs REST** con Django REST Framework y está des
 
 ### 📁 API de Proyectos  
 Base URL:  
-https://<tu-app>.onrender.com/api/projects/
+https://taller-api-0w81.onrender.com/api/projects/
 
 swift
 Copy code
