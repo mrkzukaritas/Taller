@@ -127,8 +127,6 @@ USE_I18N = True
 
 USE_TZ = True
 
-# Para desarrollo rápido (acepta todo)
-CORS_ALLOW_ALL_ORIGINS = True
 
 
 # Static files (CSS, JavaScript, Images)
@@ -153,3 +151,7 @@ SPECTACULAR_SETTINGS = {
     "VERSION": "1.0.0",                    # versión de tu API
     "SERVE_INCLUDE_SCHEMA": False,         # no incluir esquema dentro de Swagger/Redoc
 }
+CORS_ALLOWED_ORIGINS = [
+    "https://ivanunibague.github.io",    # tu GitHub Pages       # si pruebas con React
+    "http://127.0.0.1:8000"           # si pruebas local con Live Server
+]
